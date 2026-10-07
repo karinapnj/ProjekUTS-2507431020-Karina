@@ -1,0 +1,312 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+a {
+    color: #be185d;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #5b21b6;
+    outline-offset: 2px;
+}
+
+.halaman-auth {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.panel-artwork {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 42%;
+    padding: 48px;
+    color: #ffffff;
+    background: linear-gradient(160deg, #1e1b4b 0%, #5b21b6 50%, #be185d 100%);
+}
+
+.bentuk {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bentuk-satu {
+    width: 420px;
+    height: 420px;
+    top: -120px;
+    right: -140px;
+    background: radial-gradient(circle at 30% 30%, #f9a8d4, #be185d 70%);
+    opacity: 0.55;
+}
+
+.bentuk-dua {
+    width: 260px;
+    height: 260px;
+    top: 30%;
+    left: -100px;
+    background: radial-gradient(circle at 30% 30%, #fcd34d, #f97316 70%);
+    opacity: 0.35;
+}
+
+.bentuk-tiga {
+    width: 160px;
+    height: 160px;
+    top: 38%;
+    right: 12%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.konten-artwork {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 260px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.konten-artwork h2 {
+    margin-bottom: 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.konten-artwork p {
+    margin-bottom: 32px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.nav-sosial {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-sosial a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    text-shadow: none;
+}
+
+.nav-sosial a:hover {
+    color: #5b21b6;
+    background-color: #ffffff;
+}
+
+.nav-sosial a:focus-visible {
+    outline-color: #ffffff;
+}
+
+.panel-formulir {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 24px;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-decoration: none;
+}
+
+.logo-lambang {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #5b21b6, #be185d);
+}
+
+.kotak-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 32px auto;
+}
+
+.kotak-login h1 {
+    margin-bottom: 8px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.875rem;
+    line-height: 1.25;
+}
+
+.sub-judul {
+    margin-bottom: 28px;
+    color: #4b5563;
+}
+
+.tombol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 13px 16px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tombol-google {
+    color: #1f2937;
+    background-color: #ffffff;
+    border: 1.5px solid #6b7280;
+}
+
+.tombol-google:hover {
+    background-color: #f3f4f6;
+}
+
+.tombol-masuk {
+    margin-top: 8px;
+    color: #ffffff;
+    background-color: #be185d;
+    border: 1.5px solid #be185d;
+}
+
+.tombol-masuk:hover {
+    background-color: #9d174d;
+    border-color: #9d174d;
+}
+
+.pemisah {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.pemisah::before,
+.pemisah::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #d1d5db;
+}
+
+.kelompok-input {
+    margin-bottom: 20px;
+}
+
+.kelompok-input label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.baris-label {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.tautan-lupa {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.kolom-input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #1f2937;
+    background-color: #ffffff;
+    border: 1.5px solid #6b7280;
+    border-radius: 10px;
+}
+
+.kolom-input::placeholder {
+    color: #6b7280;
+}
+
+.kolom-input:focus {
+    border-color: #5b21b6;
+}
+
+.opsi-ingat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.opsi-ingat input {
+    width: 18px;
+    height: 18px;
+    accent-color: #be185d;
+}
+
+footer {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #4b5563;
+}
+
+@media (min-width: 768px) {
+    .panel-artwork {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .panel-formulir {
+        padding: 32px 48px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel-artwork {
+        flex-basis: 55%;
+        padding: 64px;
+    }
+
+    .konten-artwork h2 {
+        font-size: 2.75rem;
+    }
+}
